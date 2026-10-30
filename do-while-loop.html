@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let correct_password = "admin123";
+        let password;
+        do{
+            password=prompt("enter your password")
+            if(password!=correct_password){
+                alert("wrong password")
+            }
+        }while(password!=correct_password)
+
+        document.write("login successful")
+    </script>
+</body>
+</html>

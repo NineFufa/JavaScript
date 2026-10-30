@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading">HELLO WORLD!</h1>
+    <button onclick="changecont()">click me</button>
+
+
+    <h2 id="count">0</h2>
+    <button onclick="increas()">click me</button>
+
+
+
+
+    <script>
+        function changecont() {
+            document.getElementById("heading").innerText = "The text has been change by dom"
+            document.getElementById("heading").style.color = "blue"
+            document.getElementById("heading").style.fontSize = "50px"
+        }
+
+        let number = 0;
+        function increas() {
+            number += 1;
+            document.getElementById("count").innerText = number;
+        }
+    </script>
+</body>
+
+</html>
